@@ -1,0 +1,298 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar navbar-expand navbar-dark myNavCol" [containerInside]="true">
+
+    <div class="col-md d-flex topper py-md-1 pl-0">
+      <div class="icon d-flex justify-content-center align-items-center">
+        <mdb-icon fas icon="paper-plane"></mdb-icon>
+      </div>
+      <div class="text">
+        <span *ngIf="isUz">Email</span>
+        <span *ngIf="isRu">E-mail</span>
+        <span *ngIf="isEn">Email</span>
+        <span>contact.uyai@gmail.com</span>
+      </div>
+    </div>
+
+
+    <div class="col-md d-flex topper py-md-1">
+      <div class="icon d-flex justify-content-center align-items-center">
+        <mdb-icon fas icon="phone"></mdb-icon>
+        <!-- #1b9ce3 -->
+      </div>
+      <div class="text" *ngIf="isUz">
+        <span>Telefon</span>
+        <span>Qo'ng'iroq qiling: +39 375 504 28 07</span>
+      </div>
+      <div class="text" *ngIf="isRu">
+        <span>Cellulare</span>
+        <span>Chiamaci: +39 375 504 28 07</span>
+      </div>
+      <div class="text" *ngIf="isEn">
+        <span>Phone</span>
+        <span>Call us: +39 375 504 28 07</span>
+      </div>
+    </div>
+
+      
+    <div class="topper topper-lang ml-auto">
+      <links>
+          <ul class="navbar-nav mr-auto">
+              <li id="langUz" class="nav-item active waves-light" mdbWavesEffect>
+                  <a class="nav-link" (click)="changeToUz()">O‘z</a>
+              </li>
+              <li id="langEn" class="nav-item waves-light" mdbWavesEffect>
+                  <a class="nav-link" (click)="changeToEn()">En</a>
+              </li>
+              <li id="langRu" class="nav-item waves-light" mdbWavesEffect>
+                  <a class="nav-link" (click)="changeToRu()">It</a>
+              </li>
+          </ul>
+      </links>
+    </div>
+  </mdb-navbar>
+
+  <mdb-navbar SideClass="navbar navbar-expand-md navbar-light white intro-fixed-nav" [containerInside]="true">
+    <mdb-navbar-brand>
+        <a *ngIf="!isUz" class="logo navbar-brand" routerLink="./"><img src="assets/images/logo.png" alt="" height="80"></a>
+        <a *ngIf="isUz" class="logo navbar-brand" routerLink="/"><img src="assets/images/logo.png" alt="" height="80"></a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mr-auto" *ngIf="isUz">
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="/our-team">Jamoa</a>
+            </li>
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="/faq">FAQ</a>
+            </li>
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="/contact">Bog'lanish</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-auto" *ngIf="isEn">
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="./our-team">Our team</a>
+            </li>
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="./faq">FAQ</a>
+            </li>
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="./contact">Contact us</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-auto" *ngIf="isRu">
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="./our-team">Squadra</a>
+            </li>
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="./faq">Domande Frequenti</a>
+            </li>
+            <li class="nav-item" mdbWavesEffect>
+                <a class="nav-link waves-light" routerLink="./contact">Contattaci</a>
+            </li>
+        </ul>
+    </links>
+
+    <links>
+      <ul class="navbar-nav ml-auto socIcons">
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link nav-tg" href="https://t.me/uzyouthitaly" target="_blank"><mdb-icon fab icon="telegram"></mdb-icon></a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link nav-fb" href="https://www.facebook.com/UzYouthItaly" target="_blank"><mdb-icon fab icon="facebook"></mdb-icon></a>
+          </li>
+          <li class="nav-item waves-light nav-mine nav-ins" mdbWavesEffect>
+              <a class="nav-link" href="https://instagram.com/uzyouthitaly?igshid=oq44ezpi7rpv" target="_blank"><mdb-icon fab icon="instagram"></mdb-icon></a>
+          </li>
+          <li class="nav-item waves-light nav-mine nav-tw" mdbWavesEffect>
+              <a class="nav-link" href="https://twitter.com/uyai_it" target="_blank"><mdb-icon fab icon="twitter"></mdb-icon></a>
+          </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+</header>
+
+
+
+
+
+
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+
+
+
+
+
+
+
+<footer class="page-footer font-small blue-grey lighten-5">
+
+  <div style="background-color: #323B56;">
+    <div class="container">
+
+      <div class="row py-4 d-flex align-items-center">
+
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0" *ngIf="isEn">Get connected with us on social networks!</h6>
+          <h6 class="mb-0" *ngIf="isUz">Bizni ijtimoiy tarmoqlarda kuzatib boring!</h6>
+          <h6 class="mb-0" *ngIf="isRu">Seguici sui social network!</h6>
+        </div>
+
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <ul class="list-unstyled list-inline" style="margin-bottom: unset;">
+            <li class="list-inline-item">
+              <a class="nav-tg" href="https://t.me/uzyouthitaly" target="_blank"><mdb-icon fab icon="telegram-plane"></mdb-icon></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="nav-fb" href="https://www.facebook.com/UzYouthItaly" target="_blank"><mdb-icon fab icon="facebook-f"></mdb-icon></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="nav-ins" href="https://instagram.com/uzyouthitaly?igshid=oq44ezpi7rpv" target="_blank"><mdb-icon fab icon="instagram"></mdb-icon></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="nav-tw" href="https://twitter.com/uyai_it" target="_blank"><mdb-icon fab icon="twitter"></mdb-icon></a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">UYAI</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p *ngIf="isUz">Maqsadimiz yurtimizdagi yoshlarni Italiya Universitetilari bilan yaqindan tanishtirish va talaba bo'lishga ko’maklashish hamda Italiyadagi hamyurtlarimizni qo'llab quvvatlashdir.
+        </p>
+        <p *ngIf="isEn">Our goal is to familiarize applicants of our country with Italian universities and help them become students, as well as to support our compatriots in Italy.
+        </p>
+        <p *ngIf="isRu">Il nostro obiettivo è quello di familiarizzare i candidati del nostro paese con le università italiane e aiutarli a diventare studenti, oltre a sostenere i nostri connazionali in Italia.
+        </p>
+        <img src="assets/images/icon.png" alt="" width="50">
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <!-- <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4"> -->
+
+        <!-- <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">MDBootstrap</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">MDWordPress</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">BrandFlow</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+        </p> -->
+
+      <!-- </div> -->
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 *ngIf="isEn" class="text-uppercase font-weight-bold">Useful links</h6>
+        <h6 *ngIf="isRu" class="text-uppercase font-weight-bold">Link utili</h6>
+        <h6 *ngIf="isUz" class="text-uppercase font-weight-bold">Foydali havolalar</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p *ngIf="isEn">
+          <a class="dark-grey-text" href="https://ambtashkent.esteri.it/ambasciata_tashkent" target="_blank">Embassy of Italy in Tashkent</a>
+        </p>
+        <p *ngIf="isEn">
+          <a class="dark-grey-text" href="https://studyinitaly.esteri.it/en/home_borse" target="_blank">Study in Italy</a>
+        </p>
+        <p *ngIf="isEn">
+          <a class="dark-grey-text" href="http://uzembassy.it/site/index?language=en" target="_blank">Embassy of Uzbekistan in Italy</a>
+        </p>
+        <p *ngIf="isEn">
+          <a class="dark-grey-text" href="https://linguadavid.com" target="_blank">Italian Language Course</a>
+        </p>
+
+
+        <p *ngIf="isUz">
+          <a class="dark-grey-text" href="https://ambtashkent.esteri.it/ambasciata_tashkent" target="_blank">Toshkent shahridagi Italiya elchixonasi</a>
+        </p>
+        <p *ngIf="isUz">
+          <a class="dark-grey-text" href="https://studyinitaly.esteri.it/en/home_borse" target="_blank">Italiyada tahsil olish</a>
+        </p>
+        <p *ngIf="isUz">
+          <a class="dark-grey-text" href="http://uzembassy.it/site/index?language=en" target="_blank">Italiyadagi O‘zbekiston elchixonasi</a>
+        </p>
+        <p *ngIf="isUz">
+          <a class="dark-grey-text" href="https://linguadavid.com" target="_blank">Italyan tilini o‘rganamiz!</a>
+        </p>
+
+
+        <p *ngIf="isRu">
+          <a class="dark-grey-text" href="https://ambtashkent.esteri.it/ambasciata_tashkent" target="_blank">Ambasciata d'Italia Tashkent</a>
+        </p>
+        <p *ngIf="isRu">
+          <a class="dark-grey-text" href="https://studyinitaly.esteri.it/en/home_borse" target="_blank">Studia in Italia</a>
+        </p>
+        <p *ngIf="isRu">
+          <a class="dark-grey-text" href="http://uzembassy.it/site/index?language=en" target="_blank">Ambasciata dell'Uzbekistan in Italia</a>
+        </p>
+        <p *ngIf="isRu">
+          <a class="dark-grey-text" href="https://linguadavid.com" target="_blank">Impariamo l'italiano!</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 *ngIf="isEn" class="text-uppercase font-weight-bold">Contact</h6>
+        <h6 *ngIf="isRu" class="text-uppercase font-weight-bold">Contatto</h6>
+        <h6 *ngIf="isUz" class="text-uppercase font-weight-bold">Aloqa</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <mdb-icon fas icon="home" class="mr-3"></mdb-icon> Torino, TO 10091, Italy
+        </p>
+        <p>
+          <mdb-icon fas icon="envelope" class="mr-3"></mdb-icon> contact.uyai@gmail.com
+        </p>
+        <p>
+          <mdb-icon fas icon="phone" class="mr-3"></mdb-icon> +39 375 504 28 07
+        </p>
+        <p>
+          <mdb-icon fas icon="print" class="mr-3"></mdb-icon> +39 375 504 28 07
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color: #ECEFF1; color: #4F4F4F;">
+    <a class="" style="color: black;">© 2021 Uzbekistan Youth Association in Italy.</a>  All rights reserved.
+  </div>
+  <!-- Copyright -->
+
+</footer>

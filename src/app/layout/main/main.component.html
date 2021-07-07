@@ -1,0 +1,479 @@
+<div class="view intro jarallax"
+     style="background-image: url(assets/images/italy_2.jpeg); background-attachment: fixed; height: calc(100vh - 145px);">
+  <div class="full-bg-img mask" style="background-color: rgba(255, 255, 255, 0.4)">
+    <div class="container">
+      <div class="d-flex align-items-center d-flex justify-content-center" style="height: calc(100vh - 145px)">
+        <div class="row mt-5">
+          <div class="col-md-12 wow fadeIn mb-3">
+            <div class="intro-info-content text-center" style="text-shadow: 2px 2px 4px rgb(197, 197, 197); color: #000;">
+              <h3 *ngIf="isEn" style="font-weight: 400;" class="h1 display-1 mb-2 wow fadeInDown" data-wow-delay="0.3s">Uzbekistan Youth Association in Italy
+              </h3>
+              <h3 *ngIf="isUz" style="font-weight: 400;" class="h1 display-1 mb-2 wow fadeInDown" data-wow-delay="0.3s">Italiyadagi O'zbekiston Yoshlari Assotsiatsiyasi
+              </h3>
+              <h3 *ngIf="isRu" style="font-weight: 400;" class="h1 display-1 mb-2 wow fadeInDown" data-wow-delay="0.3s">Associazione Giovanile dell'Uzbekistan in Italia
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2 class="h1 font-bold our-text mt-5 mb-3" *ngIf="isUz">Italiyadagi O'zbekiston Yoshlari Assotsiatsiyasi</h2>
+      <h2 class="h1 font-bold our-text mt-5 mb-3" *ngIf="isEn">Uzbekistan Youth Association in Italy</h2>
+      <h2 class="h1 font-bold our-text mt-5 mb-3" *ngIf="isRu">Associazione Giovanile dell'Uzbekistan in Italia</h2>
+      <p *ngIf="isUz" align="justify">Assotsiyatsiyaning asosiy maqsadi, yurtimizdagi yoshlarni Italiya Universitetilari bilan
+        yaqindan tanishtirish, ularga talabalikkacha bo’lgan davrda ko’maklashish, aniqroq qilib aytganda Universitetga
+        topshirish uchun qanday hujjatlar kerak bo’ladi, Universitet tomonidan qanday talablar qo’yilgan, Universitet va
+        Italiya hukumati tomonidan ta’sis etilgan grantlar (scholarship) to’g’risida ma’lumot, VISA olish tartibi kabi
+        savollarga javob topishda ko’maklashadi.</p>
+      <p *ngIf="isEn" class="text-center">Our aim to familiarize the youth in our country about Italian Universities, to
+        help them with university application, as well as informing our fellow compatriots about latest changes in
+        Italy and to organize diverse social events for them.</p>
+      <p *ngIf="isRu" class="text-center">Il nostro obiettivo è quello di familiarizzare i giovani del nostro paese sulle
+        università italiane, di aiutarli con la domanda universitaria, nonché di informare i nostri connazionali sugli
+        ultimi cambiamenti in Italia e di organizzare diversi eventi sociali per loro.</p>
+    </div>
+  </div>
+</div>
+
+
+<!--Section: Magazine v.3-->
+<section class="magazine-section container mb-5">
+
+  <!-- Section heading -->
+  <h2 class="h1 text-center font-bold our-text mt-5 mb-3" *ngIf="isUz">Italiya Oliy Ta'lim Muassasalari</h2>
+  <h2 class="h1 text-center font-bold our-text mt-5 mb-3" *ngIf="isEn">Italian Universities</h2>
+  <h2 class="h1 text-center font-bold our-text mt-5 mb-3" *ngIf="isRu">Italian Universities</h2>
+  <!-- Section description -->
+  <p *ngIf="isEn" class="text-center w-responsive mx-auto mb-5">Excellence in Research, Science and Creativity. 
+    Outstanding educational system based on solid notions, scientific method and creative approach. Wide offer of
+    courses also in English in a dynamic and pleasant environment.
+    <a routerLink="./universities">
+      <b>Full list </b>
+      <mdb-icon fas icon="angle-double-right" style="vertical-align: middle;"></mdb-icon>
+    </a>
+  </p>
+  <p *ngIf="isUz" class="text-center w-responsive mx-auto mb-5">Tadqiqot, ilm-fan va ijodkorlikning mukammalligi.
+    Qattiq e'tiqod, ilmiy uslub va ijodkorlikka asoslangan ajoyib ta'lim tizimi. Dinamik va yoqimli muhitda ingliz
+    tilidagi keng ko'lamli kurslar.
+    <a routerLink="./universities">
+      <b>To'liq ro'yhat </b>
+      <mdb-icon fas icon="angle-double-right" style="vertical-align: middle;"></mdb-icon>
+    </a>
+  </p>
+  <p *ngIf="isRu" class="text-center w-responsive mx-auto mb-5">Eccellenza nella ricerca, scienza e creatività. Eccezionale sistema
+    educativo basato su solide nozioni, metodo scientifico e approccio creativo. Ampia offerta di corsi anche in
+    inglese in un ambiente dinamico e piacevole.
+    <a routerLink="./universities">
+      <b>Lista completa</b>
+      <mdb-icon fas icon="angle-double-right" style="vertical-align: middle;"></mdb-icon>
+    </a>
+  </p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-12 mb-lg-0 mb-5">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+          <img class="img-fluid" src="https://telegra.ph/file/6b8d2b5f39028f3b5a11c.jpg" alt="Sample image" style="height: 233.33px;">
+          <a routerLink="./universities/bologna">
+            <div class="mask rgba-white-slight waves-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Badge -->
+            <a>
+              <mdb-badge color="pink">
+                <mdb-icon fas icon="user-graduate" class="pr-2" aria-hidden="true"></mdb-icon>Bologna</mdb-badge>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <a routerLink="./universities/bologna" class="font-weight-bold" style="color: inherit;">Università di Bologna</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Featured news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>The oldest university in the world</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>80 program in English</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>Receive up to 5300 € of scholarship</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>85.000 students</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-md-0 mb-5">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+          <img class="img-fluid" src="https://www.datamanager.it/wp-content/uploads/2020/09/CAF_gallery_01.jpg"
+                                        style="width: 100%; height: 233.33px;" alt="Sample image">
+          <a routerLink="./universities/ca-foscari">
+            <div class="mask rgba-white-slight waves-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Badge -->
+            <a>
+              <mdb-badge color="deep-orange">
+                <mdb-icon fas icon="university" class="pr-2" aria-hidden="true"></mdb-icon>Venice</mdb-badge>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <a routerLink="./universities/ca-foscari" class="font-weight-bold" style="color: inherit;">Ca' Foscari University of Venice</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Featured news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>Trends in the blogosphere for 2016.</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>Where you eat the best lunch in Warsaw?</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>What camera take for holidays?</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>Why you should visit Lisbon?</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-6 mb-0">
+
+      <!-- Featured news -->
+      <div class="single-news mb-3">
+
+        <!-- Image -->
+        <div class="view overlay rounded z-depth-2 mb-4">
+          <img class="img-fluid" src="https://www.sistemi-integrati.net/wp-content/uploads/2020/11/La-Sapienza-Roma-scaled.jpg" alt="Sample image">
+          <a routerLink="./universities/sapienza">
+            <div class="mask rgba-white-slight waves-light" mdbWavesEffect></div>
+          </a>
+        </div>
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+          <!-- Grid column -->
+          <div class="col-12">
+
+            <!-- Badge -->
+            <a>
+              <mdb-badge success="true">
+                <mdb-icon fas icon="graduation-cap" class="pr-2" aria-hidden="true"></mdb-icon>Rome</mdb-badge>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <a class="font-weight-bold" style="color: inherit;" routerLink="./universities/sapienza">Sapienza Università di Roma</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Featured news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>700 years of history</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>Study for free</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news mb-3">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0 mb-3">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>Receive up to 5100 € of scholarship</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+      <!-- Small news -->
+      <div class="single-news">
+
+        <!-- Title -->
+        <div class="d-flex justify-content-between">
+          <div class="col-11 text-truncate pl-0">
+            <mdb-icon fas icon="check" class="pr-2"></mdb-icon>
+            <a>115,000 students</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- Small news -->
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!--Section: Magazine v.3-->
+
+<!--Projects section v.1-->
+<section class="container">
+
+  <!--Section heading-->
+  <h2 class="text-center h1 our-text py-4">
+    <strong *ngIf="isEn">Latest news</strong>
+    <strong *ngIf="isUz">So'nggi yangiliklar</strong>
+    <strong *ngIf="isRu">Ultime notizie</strong>
+  </h2>
+
+</section>
+
+<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100 our-height" src="../../../assets/images/news/1.png" alt="First slide">
+      <div class="mask waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <!-- <h3 class="h3-responsive">Light mask</h3>
+      <p>First text</p> -->
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100 our-height" src="../../../assets/images/news/2.png" alt="Second slide">
+      <div class="mask waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <!-- <h3 class="h3-responsive">Strong mask</h3>
+      <p>Secondary text</p> -->
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100 our-height" src="../../../assets/images/news/3.png" alt="Third slide">
+      <div class="mask waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <!-- <h3 class="h3-responsive">Slight mask</h3>
+      <p>Third text</p> -->
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view w-100">
+      <img class="d-block w-100 our-height" src="../../../assets/images/news/4.png" alt="Third slide">
+      <div class="mask waves-light" mdbWavesEffect></div>
+    </div>
+    <div class="carousel-caption">
+      <!-- <h3 class="h3-responsive">Slight mask</h3>
+      <p>Third text</p> -->
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>
+
+<div class="container">
+  <div class="row" id="ourMap">
+    <div class="col-md-6 mt-5">
+      <h2 *ngIf="isEn" style="font-weight: 500; margin-top: 110px;"><strong>WHERE WE ARE</strong></h2>
+      <h2 *ngIf="isUz" style="font-weight: 500; margin-top: 110px;"><strong>QAMROVIMIZ</strong></h2>
+      <h2 *ngIf="isRu" style="font-weight: 500; margin-top: 110px;"><strong>DOVE SERVIAMO</strong></h2>
+      
+      <p *ngIf="isEn" style="font-size: 18px;" class="mt-4">UYAI works in 5 regions in
+        Italy, to coordinate ongoing work and initiatives with local universities.
+        Working across regions we have been connecting youth with opportunities to
+        realize their full potential.
+      </p>
+      <p *ngIf="isUz" style="font-size: 18px;" class="mt-4">UYAI Italiyaning 5 ta
+        mintaqasida, mahalliy universitetlardagi hamyurtlarmiz bilan doimiy ravishda 
+        turli tadbirlar va tashabbuslarni muvofiqlashtirish ustida ishlaydi. Hududlar
+        kesimida ishlash orqali biz yoshlarni o'z salohiyatlarini to'liq ko'rsatishga
+        ko'maklashamiz.
+      </p>
+      <p *ngIf="isRu" style="font-size: 18px;" class="mt-4">UYAI lavora in 5 regioni
+        in Italia, per coordinare i lavori in corso e le iniziative con le università
+        locali. Lavorando in tutte le regioni, abbiamo messo in contatto i giovani con
+        l'opportunità di realizzare il loro pieno potenziale.
+      </p>
+      
+      <button routerLink="./contact" *ngIf="isEn" mdbBtn type="button" color="primary" outline="true" mdbWavesEffect>Contact us</button>
+      <button routerLink="/contact" *ngIf="isUz" mdbBtn type="button" color="primary" outline="true" mdbWavesEffect>Aloqa</button>
+      <button routerLink="./contact" *ngIf="isRu" mdbBtn type="button" color="primary" outline="true" mdbWavesEffect>Contattaci</button>
+    </div>
+    <div class="col-md-6 text-center my-5">
+      <img class="w-100" src="../../../assets/images/italy_map.png" alt="" >
+    </div>
+  </div>
+</div>
+

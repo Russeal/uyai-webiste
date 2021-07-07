@@ -1,1 +1,180 @@
 /* You can add global styles to this file, and also import other style files */
+.myNavCol {
+    background-color: #323B56;
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        .topper {
+            font-size: 15px;
+            width: 100%;
+            color: white;
+            .icon {
+                color: #6ed175
+            }
+            .text {
+                padding-left: 15px;
+                span:first-child {
+                    font-weight: 700
+                }
+                span {
+                    width: 100%;
+                    display: block;
+                    line-height: 1.25
+                }
+            }
+        }
+        .topper-lang {
+            margin-bottom: unset;
+            width: unset
+        }
+    }
+}
+
+.navbar.white {
+    height: 100px;
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+    .logo {
+        
+        font-size: 40px
+    }
+    .socIcons {
+        font-size: 45px;
+        .nav-tg {
+            color: #0088cc !important
+        }
+        .nav-fb {
+            color: #3b5998 !important
+        }
+        .nav-mine {
+            height: 45px;
+            width: 45px;
+            margin: 10px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 1rem;
+            transition: all .2s ease-in-out;
+            a {
+                color: white !important;
+                padding: 0
+            }
+        }
+        .nav-ins {
+            margin-right: 1rem;
+            background: #d6249f;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)
+        }
+        .nav-tw {
+            background: #1C9DEC
+        }
+        .nav-tg:hover, .nav-mine:hover, .nav-fb:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.marg-top {
+    margin-top: 95px !important
+}
+
+.marg-top2 {
+    margin-top: 150px !important
+}
+
+footer {
+    .list-inline-item {
+    }
+
+    .nav-tg, .nav-fb, .nav-ins, .nav-tw {
+        width: 47px !important;
+        height: 47px !important;
+        background-color: #0088cc !important;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 0;
+        margin: 10px;
+        overflow: hidden;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 50%;
+        mdb-icon, i {
+            display: inline-block;
+            width: inherit;
+            color: #fff;
+            text-align: center;
+            font-size: 1.75rem;
+            line-height: 47px;
+        }
+    }
+
+    .nav-ins {
+        margin-right: 1rem;
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)
+    }
+
+    .nav-fb {
+        background-color: #3b5998 !important;
+    }
+
+    .nav-tg:hover, .nav-fb:hover, .nav-ins:hover, .nav-tw:hover {
+        transform: scale(1.2);
+    }
+    
+}
+
+.our-text {
+    color: #3B5997;
+}
+
+.our-height {
+    height: 570px;
+}
+
+#ourMap {
+    height: 520px
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .display-1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        z-index: 2;
+        background-color: white;
+        padding: 15px;
+        max-width: 364px;
+        position: relative;
+        margin-left: auto;
+    }
+
+    .topper {
+        display: none !important
+    }
+
+    .topper-lang {
+        display: block !important;
+        text-align: right
+    }
+    .navbar.navbar-expand-md links .navbar-nav.ml-auto {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+    }
+
+    .display-1 {
+        font-size: 3rem;
+    }
+
+    #ourMap {
+        height: 920px
+    }
+    
+}

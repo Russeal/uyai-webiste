@@ -1,0 +1,365 @@
+<div class="container myController">
+
+  <section class="team-section text-center my-5">
+
+    <!-- Section heading -->
+    <h2 *ngIf="isEn" class="h1 pink-text mb-3 font-bold">Our amazing team</h2>
+    <h2 *ngIf="isUz" class="h1 pink-text mb-3 font-bold">Bizning Jamoa</h2>
+    <h2 *ngIf="isIt" class="h1 pink-text mb-3 font-bold">Il nostro team</h2>
+    <!-- Section description -->
+    <p *ngIf="isUz" class="grey-text w-responsive mx-auto mb-5">Yurtimiz yoshlari chet
+      elda ta'lim olish orqali yanada yaxshi va yorqin kelajakni orzu qilmoqdalar.
+      Bizning ajoyib jamoamiz ularning orzularini ro'yobga chiqarishga yordam beradi.
+      Keling va bizga qo'shiling.
+    </p>
+    <p *ngIf="isEn" class="grey-text w-responsive mx-auto mb-5">Our customers are dreaming of a
+      better and brighter future, through education. Our amazing team helps make their
+      dreams a reality. Come and join us.
+    </p>
+    <p *ngIf="isIt" class="grey-text w-responsive mx-auto mb-5">
+      I nostri clienti sognano un futuro migliore e più luminoso, attraverso
+      l'istruzione. Il nostro fantastico team aiuta a trasformare i loro sogni in
+      realtà. Vieni e unisciti a noi.
+    </p>
+
+    <!-- Grid row -->
+    <div class="row mb-5">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/prezident2.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Toirxo'ja Maxamatxo'jaev</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Uyushma prezidenti</strong>
+          <strong *ngIf="!isUz">UYAI president</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/toirxoja" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/maxamatxojayev/" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/menejer1.jpeg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Bobur Xolmatov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Tashqi aloqalar menejeri</strong>
+          <strong *ngIf="!isUz">Foreign affairs and events manager</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/profile.php?id=100014713387002" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/boburxs/" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/menejer2.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Saidalixon Alixonov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Kontent menejer</strong>
+          <strong *ngIf="!isUz">Content manager</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/saidalihon.alihonov" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/soghuniy/" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/nodir aka.jpeg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Nodirjon Yusufov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">O'quv ishlari bo'yicha menejer</strong>
+          <strong *ngIf="!isUz">Educational affairs manager</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/profile.php?id=100006861272786" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/nodiryusufov_/" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <!-- Grid row -->
+<br>
+    <!-- Grid row -->
+    <div class="row mb-5">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/programmer 2.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Abdurasul Bobonazarov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Dasturiy ta'minotchi</strong>
+          <strong *ngIf="!isUz">ICT specialist</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/muhammadrasul.bobonazarov" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Twitter -->
+          <a class="p-2 fa-lg tw-ic" href="https://twitter.com/Muhammad__Rasul" target="_blank">
+            <mdb-icon fab icon="twitter" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/muhammad_rasul19/" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Github -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/abdurasul-bobonazarov-b68464141/" target="_blank">
+            <mdb-icon fab icon="linkedin" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/coor venice.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Sarvar Sharipov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Hududiy koordinator (Venetsiya)</strong>
+          <strong *ngIf="!isUz">Regional coordinator (Venice)</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/sarvarsharipoff" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Twitter -->
+          <a class="p-2 fa-lg tw-ic" href="https://twitter.com/sarvarsharipoff" target="_blank">
+            <mdb-icon fab icon="twitter" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/sarvarsharipoff/" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/coor turin.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Tolibjon Olimjonov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Hududiy koordinator (Turin)</strong>
+          <strong *ngIf="!isUz">Regional coordinator (Torino)</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/tolib.olimjonov.37" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/tolib.olimjonov" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Linkedin -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/tolibjon-olimjonov-b69ba71a8" target="_blank">
+            <mdb-icon fab icon="linkedin" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/smm1.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Jahongir Saydaliyev</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">SMM mutaxassisi</strong>
+          <strong *ngIf="!isUz">SMM specialist</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <!-- Facebook -->
+          <a class="p-2 fa-lg fb-ic" href="" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+<br>
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/smm2.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Muslimjon Nabijonov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">SMM mutaxassisi</strong>
+          <strong *ngIf="!isUz">SMM specialist</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+
+          <!-- <a class="p-2 fa-lg fb-ic" href="" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a> -->
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/jon_torino/" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/coor rome.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Ismoiljon Isamukhamedov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Hududiy koordinator (Rim)</strong>
+          <strong *ngIf="!isUz">Regional coordinator (Rome)</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+          <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/profile.php?id=100010975935622" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.instagram.com/icmveel/" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/akmal.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Akmal Xasanov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Hududiy koordinator (Messina)</strong>
+          <strong *ngIf="!isUz">Regional coordinator (Messina)</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+
+          <!-- <a class="p-2 fa-lg fb-ic" href="" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a> -->
+          <!-- Instagram -->
+          <a class="p-2 fa-lg ins-ic" href="" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="../../../assets/images/umidjon.jpg" class="rounded-circle z-depth-1"
+            alt="Sample avatar" height="175">
+        </div>
+        <h5 class="font-weight-bold mt-4 mb-3">Umidjon Xudoynazarov</h5>
+        <p class="blue-text">
+          <strong *ngIf="isUz">Hududiy koordinator (Bolonya)</strong>
+          <strong *ngIf="!isUz">Regional coordinator (Bologna)</strong>
+        </p>
+        <!-- <p class="grey-text"></p> -->
+        <ul class="list-unstyled mb-0">
+
+          <!-- Facebook -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.facebook.com/umidjon.khudaynazarov.92" target="_blank">
+            <mdb-icon fab icon="facebook-f" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Twitter -->
+          <a class="p-2 fa-lg tw-ic" href="https://twitter.com/KhudaynazarovU" target="_blank">
+            <mdb-icon fab icon="twitter" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Instagram -->
+          <a class="p-2 fa-lg fb-ic" href="https://www.instagram.com/umidjon.khudaynazarov" target="_blank">
+            <mdb-icon fab icon="instagram" class="blue-text"> </mdb-icon>
+          </a>
+          <!-- Github -->
+          <a class="p-2 fa-lg ins-ic" href="https://www.linkedin.com/in/umidjon-khudaynazarov-9667a3196/" target="_blank">
+            <mdb-icon fab icon="linkedin" class="blue-text"> </mdb-icon>
+          </a>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!-- Section: Team v.1 -->
+</div>

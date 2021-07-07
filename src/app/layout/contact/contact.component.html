@@ -1,0 +1,130 @@
+<section class="my-5 container myController">
+
+  <h2 *ngIf="isEn" class="h1 text-center blue-text mb-3 font-bold">Contact us</h2>
+  <h2 *ngIf="isUz" class="h1 text-center blue-text mb-3 font-bold">Biz bilan bog'laning</h2>
+  <h2 *ngIf="isIt" class="h1 text-center blue-text mb-3 font-bold">Contattaci</h2>
+  
+  <p class="text-center w-responsive mx-auto mb-5"></p>
+
+    
+  <div class="row">
+
+    
+    <div class="col-md-9 mb-md-0 mb-5">
+
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+        
+        <div class="row">
+
+          
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" formControlName="contactFormName" id="defaultContactFormName" class="form-control" mdbInput>
+              <label for="contact-name" class="">Your name</label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="md-form mb-0">
+              <input type="text" formControlName="contactFormEmail" id="defaultContactFormEmail" class="form-control" mdbInput>
+              <label for="contact-email" class="">Your email</label>
+            </div>
+          </div>
+          
+
+        </div>
+        <div class="row">
+
+          <div class="col-md-12">
+            <div class="md-form mb-0">
+              <input type="text" formControlName="contactFormSubjects" id="contact-Subject" class="form-control" mdbInput>
+              <label for="contact-Subject" class="">Subject</label>
+            </div>
+          </div>
+          
+
+        </div>
+        
+
+        <div class="row">
+
+          
+          <div class="col-md-12">
+            <div class="md-form">
+              <textarea type="text" formControlName="contactFormMessage" id="exampleFormControlTextarea2" class="form-control md-textarea" rows="3"
+                mdbInput></textarea>
+              <label for="contact-message">Your message</label>
+            </div>
+          </div>
+          
+
+        </div>
+
+        <div class="text-center text-md">
+          <button mdbBtn color="primary" type="submit" mdbWavesEffect [disabled]="disabledSubmitButton">Send</button>
+        </div>
+        
+
+      </form>
+
+    </div>
+    
+    <div class="col-md-3 text-center">
+      <ul class="list-unstyled mb-0">
+        <li>
+          <mdb-icon fas icon="map-marked" size="2x" class="blue-text"></mdb-icon>
+          <p>Torino, TO 10091, Italy</p>
+        </li>
+        <li>
+          <mdb-icon fas icon="phone" size="2x" class="mt-4 blue-text"></mdb-icon>
+          <p>+39 375 504 28 07</p>
+        </li>
+        <li>
+          <mdb-icon fas icon="envelope" size="2x" class="mt-4 blue-text"></mdb-icon>
+          <p class="mb-0">contact.uyai@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+    
+
+  </div>
+  
+
+</section>
+
+
+
+
+<!-- <form class="text-center border border-light p-5 my-5 container" style="width: 40%;" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+  <p class="h4 mb-4">Contact us</p>
+
+  
+  <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
+    class="form-control mb-4" placeholder="Name">
+
+    
+  <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
+    class="form-control mb-4" placeholder="E-mail">
+
+    
+  <label>Subject</label>
+  <select formControlName="contactFormSubjects" class="browser-default custom-select mb-4">
+    <option value="" disabled>Choose option</option>
+    <option value="1" selected>Feedback</option>
+    <option value="2">Report a bug</option>
+    <option value="3">Feature request</option>
+    <option value="4">Feature request</option>
+  </select>
+
+  
+  <div class="form-group">
+    <textarea formControlName="contactFormMessage" class="form-control rounded-0" mdbInput id="exampleFormControlTextarea2"
+      rows="3" placeholder="Message"></textarea>
+  </div>
+
+  <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
+    mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Send</button>
+
+</form> -->
